@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Starts the HBNB Flask application"""
 from flask import Flask
-import escape
 
 
 app = Flask(__name__)
@@ -19,7 +18,7 @@ def just_hbnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_text(text):
-    text = escape(text).replace('_', ' ')
+    text = text.replace('_', ' ')
     return 'C {}'.format(text)
 
 
