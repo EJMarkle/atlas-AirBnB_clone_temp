@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Starts the HBNB Flask application"""
-from flask import Flask, escape
+from flask import Flask
+import escape
 
 
 app = Flask(__name__)
